@@ -1,0 +1,48 @@
+{
+  "name": "mikail",
+  "version": "1.0.0",
+  "scripts": {
+    "build:client": "bun run --filter client build",
+    "build:server": "bun run --filter server build",
+    "build": "bun run --parallel --filter client --filter server build",
+    "dev:client": "bun run --filter client dev",
+    "dev:server": "bun run --filter server dev",
+    "dev": "bun run --parallel --filter client --filter server dev",
+    "start:client": "bun run --filter client start",
+    "start:server": "bun run --filter server start",
+    "start": "bun run --parallel --filter client --filter server start",
+    "check:client": "bun run --filter client check",
+    "check:server": "bun run --filter server check",
+    "check:shared": "bun run --filter shared check",
+    "check": "bun run --parallel --filter client --filter server --filter shared check",
+    "fix:client": "bun run --filter client fix",
+    "fix:server": "bun run --filter server fix",
+    "fix:shared": "bun run --filter shared fix",
+    "fix": "bun run --parallel --filter client --filter server --filter shared fix",
+    "format:client": "bun run --filter client format",
+    "format:server": "bun run --filter server format",
+    "format:shared": "bun run --filter shared format",
+    "format": "bun run --parallel --filter client --filter server --filter shared format",
+    "format:check:client": "bun run --filter client format:check",
+    "format:check:server": "bun run --filter server format:check",
+    "format:check:shared": "bun run --filter shared format:check",
+    "format:check": "bun run --parallel --filter client --filter server --filter shared format:check",
+    "lint:client": "bun run --filter client lint",
+    "lint:server": "bun run --filter server lint",
+    "lint:shared": "bun run --filter shared lint",
+    "lint": "bun run --parallel --filter client --filter server --filter shared lint",
+    "lint:fix:client": "bun run --filter client lint:fix",
+    "lint:fix:server": "bun run --filter server lint:fix",
+    "lint:fix:shared": "bun run --filter shared lint:fix",
+    "lint:fix": "bun run --parallel --filter client --filter server --filter shared lint:fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "./app/*"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.8"
+  }
+}
