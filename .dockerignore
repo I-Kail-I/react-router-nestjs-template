@@ -1,0 +1,50 @@
+# Dependencies (reinstalled cleanly inside the container)
+node_modules
+**/node_modules
+
+# NestJS & general build outputs
+dist
+**/dist
+*.tsbuildinfo
+
+# React Router v7 generated files & builds
+.react-router
+**/.react-router
+build
+**/build
+
+# Bun & package manager caches/logs
+.bun
+bun-debug.log*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Git & Docker files
+.git
+.gitignore
+.dockerignore
+Dockerfile*
+docker-compose*
+
+# Testing & coverage
+coverage
+**/coverage
+.nyc_output
+
+# IDE, OS, and documentation
+.vscode
+.idea
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+README.md
+LICENSE
+docs
