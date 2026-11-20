@@ -34,7 +34,11 @@
     "lint:fix:client": "bun run --filter client lint:fix",
     "lint:fix:server": "bun run --filter server lint:fix",
     "lint:fix:shared": "bun run --filter shared lint:fix",
-    "lint:fix": "bun run --parallel --filter client --filter server --filter shared lint:fix"
+    "lint:fix": "bun run --parallel --filter client --filter server --filter shared lint:fix",
+    "test": "bun run --parallel --filter client --filter server --filter shared test",
+    "test:client": "bun run --filter client test",
+    "test:server": "bun run --filter server test",
+    "test:shared": "bun run --filter shared"
   },
   "keywords": [],
   "author": "",
