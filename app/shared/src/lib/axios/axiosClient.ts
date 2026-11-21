@@ -1,4 +1,4 @@
-import axios, { CreateAxiosDefaults } from 'axios'
+import axios, { type CreateAxiosDefaults } from 'axios'
 
 const config: CreateAxiosDefaults = {
     baseURL: '/api',

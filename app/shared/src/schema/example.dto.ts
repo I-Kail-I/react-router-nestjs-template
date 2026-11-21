@@ -1,4 +1,4 @@
-import { z, zodStrict } from "../lib/zod/strict.js";
+import { z, zodStrict } from "@/lib/zod/strict.js";
 
 export const exampleSchema = zodStrict({
   id: z.string(),
